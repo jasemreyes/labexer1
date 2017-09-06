@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jasem.labexer1.secondactivity">
+
+
+    <TextView
+        android:id="@+id/RA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your RA is"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/FG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="Your final grade is"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_below="@+id/RA1"
+        android:layout_toLeftOf="@+id/RA1"
+        android:layout_toStartOf="@+id/RA1" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:text="BACK"
+        android:layout_marginTop="22dp"
+        android:onClick="MainActivity"
+        android:layout_below="@+id/FG1"
+        android:layout_toRightOf="@+id/RA"
+        android:layout_toEndOf="@+id/RA" />
+
+    <EditText
+        android:id="@+id/FG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/FG"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/RA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
